@@ -24,6 +24,11 @@ export default defineConfig({
         'vue',
         'vue-router',
         '@vueuse/core',
+        {
+          from: 'axios',
+          imports: ['RawAxiosRequestConfig'],
+          type: true,
+        },
       ],
       dirs: [
         './src/utils',
