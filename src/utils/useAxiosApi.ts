@@ -48,6 +48,6 @@ instance.interceptors.response.use(
  * reactive useFetchApi
  */
 
-export default function useAxiosApi(url: string, config: any) {
+export default function useAxiosApi(url: string, config?: RawAxiosRequestConfig) {
   return useAxios(url, config);
 }
