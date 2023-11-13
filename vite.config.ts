@@ -6,7 +6,6 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Pages from 'vite-plugin-pages';
 import UnoCss from 'unocss/vite';
 import { presetAttributify, presetUno } from 'unocss';
-import { warmup } from 'vite-plugin-warmup';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -48,9 +47,6 @@ export default defineConfig({
         presetUno(),
         presetAttributify(),
       ],
-    }),
-    warmup({
-      clientFiles: ['./src/**/*.vue', './index.html'],
     }),
   ],
 });
