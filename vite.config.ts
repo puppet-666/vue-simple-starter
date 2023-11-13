@@ -9,6 +9,9 @@ import { presetAttributify, presetUno } from 'unocss';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    open: true,
+  },
   plugins: [
     vue(),
     AutoImport({
@@ -38,7 +41,9 @@ export default defineConfig({
     Components({
       dts: true,
       resolvers: [
-        AntDesignVueResolver(),
+        AntDesignVueResolver({
+          importStyle: false,
+        }),
       ],
     }),
     Pages(),
