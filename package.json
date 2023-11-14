@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@chuhoman/eslint-config": "^0.1.0",
+    "@types/node": "^20.9.0",
     "@vitejs/plugin-vue": "^4.2.0",
     "@vue-macros/reactivity-transform": "^0.2.4",
     "@vue-macros/volar": "^0.8.4",
